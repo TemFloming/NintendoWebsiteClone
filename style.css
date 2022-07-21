@@ -1,0 +1,384 @@
+@font-face{
+    font-family: praktika-light;
+    src: url(fonts/Helvetica\ Neue\ UltraLight.ttf);
+}
+
+*{
+    font-family: praktika-light;
+}
+
+/* --------------------------------------- */
+
+body {
+    margin: 0px;
+    padding-top: 5%;
+    background-color: #F4F4F4;
+}
+
+/* --------------------------------------- */
+
+#navbar{
+    background-color: #E60012;
+    border: 1px solid #bf0010;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    height: 7.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+    z-index: 2;
+}
+
+#navbar a{
+    float: left; 
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#ul_navbar {
+    left: 0;
+    list-style: none;
+    display:inline-flex
+}
+
+button{
+    background-color: #E60012;
+    border: #00000000
+}
+
+/* --------------------------------------- */
+
+#sidebar{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 5%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 10; /* Stay at the top */
+    left: 0;
+    background-color: #E60012;
+    border-right: 4px solid #bf0010;
+    overflow: hidden;
+    margin-right: 8;
+}
+
+#sidebar a {
+    padding: 6px 98px 6px 6px;
+    text-decoration: none;
+    color: #f2f2f2;
+    display: block;
+    justify-content: space-evenly
+    /* overflow: hidden; */
+}
+
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* --------------------------------------- */
+
+#right_content{
+
+    width: 425px; 
+    position: absolute; 
+    z-index: 1; 
+    top: 10; 
+    right: 0;
+    border-radius: 4;
+    overflow: hidden;
+    margin-right: 8;
+}
+
+#right_content_header{
+    width: 425px; 
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    z-index: 1; 
+    top: 10; 
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: 4;
+    overflow: hidden;
+}
+
+#right_content_box{
+    width: 425px; 
+    position: relative;
+    margin: 5px;
+    padding: 20px;
+    z-index: 1; 
+    top: 10; 
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: 4;
+    overflow: hidden;
+}
+
+/* --------------------------------------- */
+
+.grid_container {
+    display: inline-grid;
+    grid-template-columns: auto minmax(0,1fr);
+    gap: 5px;
+    position: relative;
+}
+
+/* liveAlive */
+.grid_item_1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* xenoblade chronicles 3*/
+.grid_item_2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* mario strikers */
+.grid_item_3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* switch sports */
+.grid_item_4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* kirby dream buffet */
+.grid_item_5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* pokemon puzzle league */
+.grid_item_6{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* fire emblem warriors */
+.grid_item_7{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+/* monster hunter rise sunbreak */
+.grid_item_8{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/* switch sports water bottle */
+.grid_item_9{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+/* pokemon scarlet and violet pre-order */
+.grid_item_10{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/* xenoblade chronicles 3 notebook  */
+.grid_item_11{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/* splatoon 3 */
+.grid_item_12{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+/* bayoneta 3 */
+.grid_item_13{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+/* pokemon scarlet and violet release date */
+.grid_item_14{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+/* mario kart deluxe booster course pass */
+.grid_item_15{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+/* falls guys season 1 */
+.grid_item_16{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+/* mario kart tour */
+.grid_item_17{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+
+/* animal crossing pocket camp */
+.grid_item_18{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+/* pikmin bloom */
+.grid_item_19{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+/* fire emblem heroes */
+.grid_item_20{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+
+/* --------------------------------------- */
+
+#share_panel{
+    background-color: #333333;
+    color: #f2f2f2;
+    margin-left: 5.5%;
+    padding-left: 7.5%;
+    height: 36px;
+    width: 874px;
+    flex-direction: row;
+    
+}
+
+#facebook_button {
+    background-color: #3B5998;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    height: 36px;
+    width: 172px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#twitter_button {
+    background-color: #55ACEE;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    height: 36px;
+    width: 172px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/* --------------------------------------- */
+
+#footer_container{
+    background-color: #00000000;
+    overflow: hidden;
+    bottom: 0%;
+    height: 7.5%;
+    width: 827.328px;
+    z-index: 0;
+}
+
+#footer_ribbon{
+    background-color: #E60012;
+    border: 1px solid #bf0010;
+    overflow: hidden;
+    bottom: 10%;
+    height: 48px;
+    width: 867.328px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+#footer_content{
+    background-color: #bf0010;
+    overflow: hidden;
+    bottom: 9%;
+    height: 21px;
+    width: 827.328px;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-content: flex-end; */
+    z-index: 0;
+}
+
+#footer_content a {
+    padding: 6px 98px 6px 6px;
+    text-decoration: none;
+    color: #f2f2f2;
+    display: block;
+    justify-content: space-evenly
+    /* overflow: hidden; */
+}
+
+#copyright{
+    padding: 6px 98px 6px 6px;
+    text-decoration: none;
+    color: #f2f2f2;
+    display: block;
+    justify-content: space-evenly
+    /* overflow: hidden; */  
+}
